@@ -1,0 +1,351 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h3 {
+    color: #5c6bc0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .appointment-setup {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  select,
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  select:focus,
+  input:focus {
+    border-color: #5c6bc0;
+    outline: none;
+  }
+  
+  button {
+    padding: 12px 18px;
+    border: none;
+    background-color: #5c6bc0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4f5b8a;
+  }
+  
+  .add-slot-btn,
+  .delete-btn {
+    background-color: #ff7043;
+  }
+  
+  .add-slot-btn:hover,
+  .delete-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .form-actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .save-btn,
+  .search-btn {
+    margin: 10px;
+  }
+  
+  .time-slot {
+    margin-bottom: 10px;
+  }
+  
+  .day-schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .time-slot input,
+  .time-slot select {
+    width: 120px;
+    margin-right: 10px;
+  }
+  /* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  h3 {
+    color: #4A90E2;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .appointment-setup {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .appointment-setup:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-title {
+    color: #5c6bc0;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .form-field {
+    margin-bottom: 24px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  select,
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  select:focus,
+  input:focus {
+    border-color: #4A90E2;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  button {
+    padding: 14px 20px;
+    border: none;
+    background-color: #4A90E2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  button:hover {
+    background-color: #357ab7;
+  }
+  
+  .add-slot-btn,
+  .delete-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: #ff7043;
+    border-radius: 6px;
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .add-slot-btn:hover,
+  .delete-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .delete-btn {
+    background-color: #e64a19;
+  }
+  
+  .error-message {
+    color: #e64a19;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .form-actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .save-btn,
+  .search-btn {
+    padding: 14px 20px;
+    font-size: 16px;
+    background-color: #4A90E2;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  .save-btn:hover,
+  .search-btn:hover {
+    background-color: #357ab7;
+  }
+  
+  .time-slot {
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #f7f8fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .time-slot input,
+  .time-slot select {
+    width: 120px;
+    margin-right: 10px;
+    background-color: #fff;
+  }
+  
+  .time-slot select {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .day-schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .time-slot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .time-slot label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+  }
+  
+  .time-slot input,
+  .time-slot select {
+    width: 100px;
+    font-size: 14px;
+  }
+  
+  .add-slot-btn {
+    background-color: #4A90E2;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .add-slot-btn:hover {
+    background-color: #357ab7;
+  }
+  
+  .delete-btn {
+    background-color: #e64a19;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #b33e16;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .appointment-setup {
+      padding: 20px;
+    }
+  
+    .form-field {
+      margin-bottom: 16px;
+    }
+  
+    button {
+      width: auto;
+    }
+  
+    .time-slot {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .day-schedule {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  

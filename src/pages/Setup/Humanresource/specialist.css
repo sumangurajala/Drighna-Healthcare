@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the specialist list */
+.specialist-list-container {
+    max-width: 800px; /* Width of the container */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.specialist-list-container:hover {
+    transform: translateY(-2px);
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Search Input Styles */
+.search-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Add Specialist Button Styles */
+.add-specialist-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-specialist-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1; /* Allow input to grow */
+}
+
+.add-specialist-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-specialist-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Export Buttons */
+.export-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.export-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.export-buttons button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Specialist List Table */
+.specialist-list {
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #2a5298;
+    transition: background-color 0.2s;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td:hover {
+    background-color: #f0f0f0;
+}
+
+/* Edit and Delete Button Styles */
+.edit-btn,
+.delete-btn {
+    background-color: #28a745; /* Green for Edit */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red for Delete */
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Footer and Pagination */
+.footer {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.pagination {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Additional Styles for the Specialist List */
+.specialist-list {
+    color: #2a5298;
+}
+.specialist-list-container h2 {
+    text-align: left; /* Align the heading to the left */
+    margin-left: 0;   /* Ensure no margin on the left */
+  }
+  /* Notification Box */
+.notification-box {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    position: absolute; /* Positioning to make it appear at the top */
+    top: 20px; /* Adjust as necessary */
+    right: 20px; /* Adjust as necessary */
+    width: 300px; /* Adjust width as necessary */
+    z-index: 1000; /* Ensure it appears on top */
+  }
+  
+  /* Notification Buttons */
+  .notification-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* General Button Styling */
+  .modal-btn {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-btn:hover {
+    background-color: #0056b3;
+  }
+  .notification-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000; /* Ensure it appears on top */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Notification Buttons */
+  .notification-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* General Button Styling */
+  .modal-btn {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-btn:hover {
+    background-color: #0056b3;
+  }
+  

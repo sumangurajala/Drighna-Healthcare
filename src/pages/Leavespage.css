@@ -1,0 +1,102 @@
+.leaves-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .leaves-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-leave-button,
+  .approve-leave-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .add-leave-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .approve-leave-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .leaves-table-container {
+    margin-top: 20px;
+  }
+  
+  .leaves-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .leaves-table th,
+  .leaves-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .leaves-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .status.approved {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status.disapproved {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .status.pending {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .action-button {
+    padding: 5px 10px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,16 @@
+.layout {
+    display: flex;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 60px; /* Adjust this if your header height changes */
+    margin-left: 200px; /* Adjust this if your sidebar width changes */
+    transition: margin-left 0.3s;
+  }
+  
+  .sidebar.closed + .content {
+    margin-left: 0;
+  }
+  

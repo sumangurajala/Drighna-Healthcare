@@ -1,0 +1,118 @@
+.smallcontainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .input-fields-container, .add-leave-type-container, .export-buttons-container, .pagination-controls, .items-per-page-dropdown {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin-bottom: 10px;
+  }
+  
+  .export-buttons-container button,
+  .add-LeaveTypes-button,
+  .edit-btn, 
+  .delete-btn {
+    margin-left: 10px; /* Add spacing between buttons */
+  }
+  
+  .notification-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons in the notification box to the right */
+    gap: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .pagination-controls {
+    justify-content: space-between; /* This keeps previous and next buttons spaced */
+  }
+  
+  .notification-box {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+/* General button styles */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff; /* Blue background */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Specific button styles */
+  .add-LeaveTypes-button,
+  .export-btn,
+  .edit-btn,
+  .delete-btn {
+    margin-left: 10px; /* Add spacing between buttons */
+  }
+  
+  /* Notification box buttons */
+  .notification-buttons button {
+    background-color: #007bff; /* Blue background */
+  }
+  
+  .notification-buttons button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .input-fields-container, 
+  .add-leave-type-container, 
+  .export-buttons-container, 
+  .pagination-controls, 
+  .items-per-page-dropdown {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .pagination-controls {
+    justify-content: space-between; /* Keep previous and next buttons spaced */
+  }
+  
+  .notification-box {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+    

@@ -1,0 +1,121 @@
+/* Overall container for the login page */
+.login-page {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(45deg, #2a5298, #ffd700);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  /* Left-side image container */
+  .login-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-image {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Login box styling */
+  .login-box {
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+  }
+  
+  /* Header inside login box */
+  .login-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .login-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  h3 {
+    font-size: 24px;
+    color: #2a5298;
+  }
+  
+  /* Form group and input styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a5298;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ffd700;
+    color: #2a5298;
+  }
+  
+  /* Alert messages */
+  .alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .login-page {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .login-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .login-box {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a5298;
+  color: #fff;
+  padding: 5px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.header-healthcare {
+  margin-right: 15px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 1px 5px;
+  margin-right: 15px;
+  flex-grow: 1;
+  margin-left: 30px;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 5px 5px;
+  font-size: 1em;
+  border-radius: 20px;
+  width: 100%; /* Full width */
+}
+
+.search-icon {
+  color: gray;
+  margin-left: -5px;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  width: 500px; /* Adjust width */
+}
+
+.logo-img {
+  height: 70px; /* Increase logo height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 1.2em; /* Reduced font size */
+}
+
+.header-icon {
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: large;
+}
+
+.header-icon:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+.notification-badge {
+  background: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 4px;
+  font-size: 0.8em;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.notification-icon {
+  position: relative;
+}
+
+.user-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.bed-status-container {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Reduce gap between icon and text */
+}
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  margin-right: 30px;
+}
+
+.logout-button:hover {
+  color: #ffd700;
+}
+/* Styling the calendar popup */
+.calendar-icon-container {
+  position: relative;
+}
+
+.calendar-popup {
+  position: absolute;
+  top: 35px; /* Adjust position based on your header layout */
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 100;
+}
+
+.calendar-popup .react-calendar {
+  width: auto;
+  max-width: 220px;
+}
+
+.calendar-popup .react-calendar__tile {
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.calendar-popup .react-calendar__tile:active {
+  background-color: #4CAF50;
+  color: white;
+}

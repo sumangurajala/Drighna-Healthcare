@@ -1,0 +1,84 @@
+/* complainent.css */
+
+/* Container Styling */
+.container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  /* Title Styling */
+  .container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Actions Styling */
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  /* Search Input Styling */
+  .actions input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  /* Buttons Styling */
+  .actions button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .actions .add-button {
+    background-color: #28a745;
+    font-size: 20px;
+  }
+  
+  .actions .add-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Table Styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Table Row Hover Effect */
+  .table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  

@@ -1,0 +1,182 @@
+/* General container padding and margin */
+.container {
+    padding: 2rem;
+  }
+  
+  /* Form styling */
+  form {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form labels */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  /* Input fields styling */
+  input[type="date"] {
+    border: 1px solid #ced4da;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  /* Styling for the form submit button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #dee2e6;
+  }
+  
+  table th {
+    background-color: #f1f3f5;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table td button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Action buttons at the top-right */
+  .d-flex.justify-content-end {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling for each action button */
+  button.btn {
+    padding: 2px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  /* Button color customization */
+  button.btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button.btn-warning {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.btn-info {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  button.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  /* Add some spacing between buttons */
+  button.btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Loading state and error message styling */
+  .loading-message,
+  .error-message {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  .loading-message {
+    color: #007bff;
+  }
+  
+  .error-message {
+    color: #dc3545;
+  }
+  
+  /* Modal Styles */
+  .modal-content {
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn-close {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Make modal content responsive */
+  @media (max-width: 768px) {
+    .modal-dialog {
+      width: 90%;
+      max-width: 500px;
+    }
+  }
+  
+  

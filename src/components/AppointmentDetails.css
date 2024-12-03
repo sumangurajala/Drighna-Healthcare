@@ -1,0 +1,98 @@
+.appointment-details {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+.appointment-header h2 {
+  margin: 0;
+  font-size: 18px; /* Reduce the font size */
+  width: 100%; /* Ensure it takes full width for wrapping */
+  text-align: center; /* Center align the heading */
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%; /* Ensure it takes full width for wrapping */
+  margin-top: 10px; /* Add some space between heading and buttons */
+}
+
+.appointment-actions button {
+  padding: 8px 16px;
+  background-color: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.appointment-actions button:hover {
+  background-color: #1e3c72;
+}
+
+.appointment-search-bar {
+  margin-top: 20px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.appointment-table {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 10px;
+}
+
+.appointment-table-header, .appointment-table-row {
+  display: contents; /* Use display contents to apply grid layout to children */
+}
+
+.appointment-table-header div, .appointment-table-row div {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: center; /* Center align the text in the columns */
+}
+
+.appointment-table-header div {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+.appointment-table-row:hover {
+  background-color: #f9f9f9;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 12px; /* Adjust font size for better fit */
+  line-height: normal; /* Ensure proper button height */
+}
+
+.status.approved {
+  background-color: #28a745;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+}

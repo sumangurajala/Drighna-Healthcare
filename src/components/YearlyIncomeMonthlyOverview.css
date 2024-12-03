@@ -1,0 +1,58 @@
+.yearly-monthly-overview {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chart-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    position: relative;
+    transition: height 0.3s ease, flex 0.3s ease;
+}
+
+.minimized-card {
+    padding: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.chart-title {
+    color: #1e3c72;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-title button {
+    background: none;
+    border: none;
+    color: #2a5298;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.chart-title button:hover {
+    color: red;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Increased max-width for bigger graph */
+    margin: 0 auto;
+}
+
+.doughnut-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

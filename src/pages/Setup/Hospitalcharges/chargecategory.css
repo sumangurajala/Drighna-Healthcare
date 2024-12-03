@@ -1,0 +1,207 @@
+.charge-category-list {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.header .add-category-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+td button:nth-child(1) {
+    background-color: #28a745;
+    color: white;
+}
+
+td button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+/* General container styles */
+.smallcontainer {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  /* Heading styles */
+  .charge-type-list-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Notification Box Styling */
+  .notification-box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .notification-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .notification-box button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .notification-box .close-button {
+    background-color: #dc3545;
+  }
+  
+  .notification-box button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Charge Type Options */
+  .charge-type-options {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .charge-type-options li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .charge-type-options li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Search input */
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Add button */
+  .add-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Table styles */
+  .charge-types-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .charge-types-table th, .charge-types-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .charge-types-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .charge-types-table td {
+    background-color: #f9f9f9;
+  }
+  
+  .delete-button {
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .charge-type-list-container {
+      padding: 10px;
+    }
+  
+    .notification-box {
+      max-width: 100%;
+    }
+  
+    .charge-types-table th, .charge-types-table td {
+      padding: 10px;
+    }
+  }
+  

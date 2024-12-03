@@ -1,0 +1,168 @@
+.billing-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.modules-section {
+  flex: 2;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.billing-case-id {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between cards */
+  justify-items: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.module-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 20px;
+  width: 180px;
+  height: 150px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+  box-sizing: border-box;
+}
+
+.module-card:hover {
+  transform: scale(1.05);
+}
+
+/* Icon Colors */
+.module-icon {
+  font-size: 2em;
+}
+
+/* Individual Card Colors */
+.module-card-appointment .module-icon {
+  color: #3557ff; /* Light Blue */
+}
+
+.module-card-opd .module-icon {
+  color: #ff6347; /* Tomato Red */
+}
+
+.module-card-pathology .module-icon {
+  color: #2e8b57; /* Sea Green */
+}
+
+.module-card-radiology .module-icon {
+  color: #8a2be2; /* Blue Violet */
+}
+
+.module-card-blood-issue .module-icon {
+  color: #ff4500; /* Orange Red */
+}
+
+.module-card-blood-component .module-icon {
+  color: #20b2aa; /* Light Sea Green */
+}
+
+/* Hover Background Colors */
+.module-card-appointment:hover {
+  background-color: rgba(53, 87, 255, 0.1); /* Lighter Blue */
+}
+
+.module-card-opd:hover {
+  background-color: rgba(255, 99, 71, 0.1); /* Lighter Red */
+}
+
+.module-card-pathology:hover {
+  background-color: rgba(46, 139, 87, 0.1); /* Lighter Green */
+}
+
+.module-card-radiology:hover {
+  background-color: rgba(138, 43, 226, 0.1); /* Lighter Violet */
+}
+
+.module-card-blood-issue:hover {
+  background-color: rgba(255, 69, 0, 0.1); /* Lighter Orange Red */
+}
+
+.module-card-blood-component:hover {
+  background-color: rgba(32, 178, 170, 0.1); /* Lighter Sea Green */
+}
+
+/* Common Icon Background */
+.icon-background {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.module-card span {
+  font-size: 1em;
+  color: #00157c; /* Dark blue text color */
+}
+
+.billing-case-id h3 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.billing-case-id input {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.billing-case-id button {
+  padding: 10px 30px;
+  background-color: #3557ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.billing-case-id button:hover {
+  background-color: #00157c;
+  color: #f8f8f8;
+}
+
+.module-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-title {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #00157c;
+}

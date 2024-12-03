@@ -1,0 +1,155 @@
+.payroll-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .payroll-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .payroll-table-container {
+    margin-top: 20px;
+  }
+  
+  .payroll-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .payroll-table th,
+  .payroll-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .payroll-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .status.generated {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status.not-generated {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .generate-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .payroll-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .payroll-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filter-container {
+    margin-right: 10px;
+  }
+  
+  label {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  select,
+  input[type='number'] {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .search-button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .payroll-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .payroll-table th,
+  .payroll-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .payroll-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .status.generated {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status.not-generated {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .generate-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .generate-button:hover {
+    background-color: #218838;
+  }
+  

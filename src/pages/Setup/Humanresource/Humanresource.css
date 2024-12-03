@@ -1,0 +1,689 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .smallcontainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar Styles */
+  .input-fields-container {
+    width: 20%;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    margin-bottom: 15px;
+  }
+  
+  .category-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Leave Type List Styles */
+  .leave-type-list-container {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .add-LeaveTypes-button, .add-leave-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-LeaveTypes-button:hover, .add-leave-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Export Buttons */
+  .export-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .export-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .export-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Leave List Table */
+  .leave-list {
+    margin-top: 20px;
+  }
+  
+  .leave-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .leave-list th, .leave-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .leave-list th {
+    background-color: #f2f2f2;
+  }
+  
+  .leave-list tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .leave-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .new-leave-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .smallcontainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Moves content apart */
+  }
+  
+  /* Sidebar Styles */
+  .input-fields-container {
+    width: 20%;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-self: flex-start; /* Keeps sidebar aligned to the top */
+  }
+  
+  .input-field {
+    margin-bottom: 15px;
+  }
+  
+  .category-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Leave Type List Styles */
+  .leave-type-list-container {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .add-LeaveTypes-button, .add-leave-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content:flex-end
+  }
+  
+  .add-LeaveTypes-button:hover, .add-leave-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Export Buttons */
+  .export-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Align export buttons to the right */
+  }
+  
+  .export-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .export-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Leave List Table */
+  .leave-list {
+    margin-top: 20px;
+  }
+  
+  .leave-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .leave-list th, .leave-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .leave-list th {
+    background-color: #f2f2f2;
+  }
+  
+  .leave-list tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .leave-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .new-leave-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-leave-btn {
+    margin-left: 10px;
+  }
+  
+  .edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
+  .add-leave-type-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns contents to the right */
+    align-items: center; /* Vertically center aligns items */
+    margin-bottom: 20px; /* Spacing below the container */
+  }
+  
+  .new-leave-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px; /* Set a fixed width */
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container for the designation list */
+.designation-list-container {
+  max-width: 800px; /* Width of the container */
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.designation-list-container:hover {
+  transform: translateY(-2px);
+}
+
+/* Heading Styles */
+h2 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search Input Styles */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Add Designation Button Styles */
+.add-designation-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.new-designation-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex: 1; /* Allow input to grow */
+}
+
+.add-designation-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-designation-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Export Buttons */
+.export-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.export-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.export-buttons button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Designation List Table */
+.designation-list {
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #2a5298;
+  transition: background-color 0.2s;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+td:hover {
+  background-color: #f0f0f0;
+}
+
+/* Edit and Delete Button Styles */
+.edit-btn,
+.delete-btn {
+  background-color: #28a745; /* Green for Edit */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red for Delete */
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Footer and Pagination */
+.footer {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Show All Button */
+.show-all-container {
+  text-align: right;
+  margin: 10px 0;
+}
+
+.show-all-container button {
+  background-color: #17a2b8; /* Teal for Show All */
+}
+
+.show-all-container button:hover {
+  background-color: #138496;
+}
+
+/* Additional Styles for the Designation List */
+.designation-list {
+  color: #2a5298;
+}
+/* Table Header Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th ,td{
+  color: #2a5298
+  ; /* Light grey background */
+  color: #333; /* Darker text color */
+  padding: 10px; /* Padding for the header */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #2a5298;
+}
+
+/* Button Styles */
+.expand-all-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #2a5298
+  ; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Padding for the button */
+  margin-left: 10px; /* Space between the text and button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.expand-all-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Action Button Styles */
+.edit-btn,
+.delete-btn {
+  background-color: #28a745; /* Green for edit */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px; /* Space between action buttons */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red for delete */
+}
+
+.edit-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+
+.leave-type-list-container h2 {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Set the text color */
+  margin-bottom: 20px; /* Add space below the heading */
+  text-align: left; /* Align the text to the left */
+  border-bottom: 2px solid #007bff; /* Add a bottom border */
+  padding-bottom: 10px; /* Space between the text and border */
+  font-family: 'Arial', sans-serif; /* Specify the font family */
+}
+/* Style for the table headers */
+th {
+  background-color: #007bff; /* Background color for the table headers */
+  color: blue; /* Text color for the table headers */
+  padding: 10px;
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px solid blue; /* Add a border at the bottom of the headers */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Style for the expand-all-button */
+.expand-all-button {
+  background-color: #28a745; /* Background color for the button */
+  color: white; /* Text color for the button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.expand-all-button:hover {
+  background-color: #218838; /* Darker green when hovered */
+}
+
+.expand-all-button:active {
+  background-color: #1e7e34; /* Even darker when clicked */
+}
+/* Notification Box */
+.notification-box {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  position: absolute; /* Positioning to make it appear at the top */
+  top: 20px; /* Adjust as necessary */
+  right: 20px; /* Adjust as necessary */
+  width: 300px; /* Adjust width as necessary */
+  z-index: 1000; /* Ensure it appears on top */
+}
+
+/* Notification Buttons */
+.notification-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Add Button Styling */
+.add-LeaveTypes-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.add-LeaveTypes-button:hover {
+  background-color: #0056b3;
+}
+
+/* General Button Styling */
+.modal-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: #0056b3;
+}
+
+

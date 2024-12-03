@@ -1,0 +1,288 @@
+/* General Container Styling */
+.staff-directory-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header Styling */
+  .staff-directory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .staff-directory-header h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .header-buttons .button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .header-buttons .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Filter and Search Actions */
+  .staff-directory-actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .role-label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .role-select {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Loading and Error Messages */
+  .loading-text {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .error-text {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Staff Card Display */
+  .staff-display {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 10px;
+  }
+  
+  .staff-card {
+    display: table-row;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .staff-card:last-child {
+    border-bottom: none;
+  }
+  
+  .staff-card div {
+    display: table-cell;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: left;
+  }
+  
+  .staff-card div:first-child {
+    text-align: center;
+    width: 80px;
+  }
+  
+  .staff-image-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .staff-details h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .staff-details p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .staff-actions button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .staff-actions .view-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .staff-actions .view-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Detailed View */
+  .staff-details-view {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .staff-details-view h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .staff-details-view table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .staff-details-view table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .staff-details-view table td:first-child {
+    font-weight: bold;
+  }
+  
+  .edit-field {
+    margin-bottom: 15px;
+  }
+  
+  .edit-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .edit-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .staff-list-view {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .staff-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .staff-table th,
+  .staff-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .staff-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .staff-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .toggle-list-view {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .toggle-list-view:hover {
+    background-color: #218838;
+  }
+  .staff-list-view {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .staff-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .staff-table th,
+  .staff-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .staff-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .staff-table td {
+    white-space: nowrap;
+  }
+  
+  .staff-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .action-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #a71d2a;
+  }
+  

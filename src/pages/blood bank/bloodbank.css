@@ -1,0 +1,472 @@
+.blood-bank-status {
+    padding: 20px;
+  }
+  
+  .notification-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    width: 80%; /* Set a relative width */
+    max-width: 1000px; /* Cap the maximum width */
+    max-height: 400px; /* Set a maximum height */
+    overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  
+  .notification-content h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #343a40;
+  }
+  
+  .notification-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #495057;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    min-width: 150px;
+    border-right: 1px solid #dee2e6;
+    padding: 10px;
+  }
+  
+  .blood-type-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #e9ecef;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+  .blood-type-button.active {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .table-section {
+    flex-grow: 1;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaf4fd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .add-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .add-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .issue-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .issue-button:hover {
+    background-color: #218838;
+  }
+  
+/* General styling for the blood bank status container */
+.blood-bank-status {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the notification box */
+.notification-box {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Close button for the notification */
+.close-notification {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Form container and general form styling */
+.form-container {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Styling for the form footer */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.calculate-button,
+.save-button,
+.save-print-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover,
+.save-button:hover,
+.save-print-button:hover {
+  background-color: #218838;
+}
+
+/* Styling for the charge summary */
+.charge-summary {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.charge-summary p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .notification-box {
+    width: 95%;
+    top: 20px;
+  }
+
+  .form-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Add styles for the sidebar and buttons */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.blood-type-button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blood-type-button.active {
+  background-color: #0056b3;
+}
+
+.blood-type-button:hover {
+  background-color: #0069d9;
+}
+
+/* Styling for the data tables */
+.table-section {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.issue-button {
+  padding: 5px 10px;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.issue-button:hover {
+  background-color: #e0a800;
+}
+/* Styling for the notification box */
+.notification-box {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px; /* Fixed width */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  border-top: 5px solid #007bff;
+}
+
+/* Styling for the close button */
+.close-notification {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header styling */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-patient-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.new-patient-button:hover {
+  background-color: #218838;
+}
+
+.case-id-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Form row */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Form summary styling */
+.form-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.summary-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.summary-group p,
+.summary-group input {
+  margin: 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Styling for the percentage span */
+.summary-group span {
+  margin-left: 5px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Styling for buttons */
+.save-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+  .notification-box {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-summary {
+    flex-direction: column;
+  }
+
+  .case-id-input {
+    width: 100%;
+  }
+}

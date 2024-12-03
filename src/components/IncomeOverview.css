@@ -1,0 +1,63 @@
+.income-overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.income-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
+    width: 300px;
+}
+
+.income-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background-color: #2a5298;
+    color: #ffd700; /* Text and icon color on hover */
+}
+
+.income-card:hover .icon-container {
+    border: 2px solid #fff; /* White border on hover */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #2a5298; /* Icon background color */
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: border 0.2s; /* Smooth transition for the border */
+}
+
+.income-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.income-title {
+    font-size: 1em;
+    color: #1e3c72;
+}
+
+.income-amount {
+    font-size: 1em;
+    color: #2a5298;
+    font-weight: bold;
+}
+
+.income-card:hover .income-title,
+.income-card:hover .income-amount {
+    color: #ffd700;
+}
